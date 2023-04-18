@@ -1,0 +1,137 @@
+/* General styles */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    border: 3px solid #1a0900;
+    border-radius: 15px 10px 15px 10px;
+    height: 80px;
+    }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .nav-item:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
+  .login-container {
+    display: flex;
+  }
+  
+  .login-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #555;
+  }
+  
+  /* Burger menu */
+  .burger-container {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-show {
+      display: flex;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .login-container {
+      display: none;
+    } 
+  
+    .burger-container {
+      display: flex;
+    }
+  }
